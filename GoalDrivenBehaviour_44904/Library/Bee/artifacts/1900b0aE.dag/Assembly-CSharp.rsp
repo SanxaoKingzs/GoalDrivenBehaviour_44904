@@ -358,6 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/GAction.cs"
 "Assets/GAgent.cs"
+"Assets/GPlanner.cs"
 "Assets/GWorld.cs"
 "Assets/WorldStates.cs"
 -langversion:9.0
