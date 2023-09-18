@@ -358,6 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/AgentVisualiser/GAgentVisual.cs"
 "Assets/GetPatient.cs"
+"Assets/GetTreated.cs"
 "Assets/GOAP/GAction.cs"
 "Assets/GOAP/GAgent.cs"
 "Assets/GOAP/GInventory.cs"
