@@ -360,6 +360,7 @@
 "Assets/GetPatient.cs"
 "Assets/GOAP/GAction.cs"
 "Assets/GOAP/GAgent.cs"
+"Assets/GOAP/GInventory.cs"
 "Assets/GOAP/GPlanner.cs"
 "Assets/GOAP/GWorld.cs"
 "Assets/GOAP/WorldStates.cs"

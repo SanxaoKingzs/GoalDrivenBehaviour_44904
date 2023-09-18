@@ -4498,6 +4498,8 @@ MonoBehaviour:
   targetTag: 
   duration: 0
   preConditions:
+  - key: FreeCubicle
+    value: 0
   - key: Waiting
     value: 0
   afterEffects:
