@@ -2,26 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class GWorld 
+public sealed class GWorld
 {
-    private static readonly GWorld gWorld = new GWorld();
+    private static readonly GWorld instance = new GWorld();
     private static WorldStates world;
-   
+
     static GWorld()
     {
         world = new WorldStates();
     }
 
-    private GWorld() 
+    private GWorld()
     {
     }
 
     public static GWorld Instance
     {
-        get { return Instance; }
+        get { return instance; }
     }
 
-    public WorldState GetWorld()
+    public WorldStates GetWorld()
     {
         return world;
     }
