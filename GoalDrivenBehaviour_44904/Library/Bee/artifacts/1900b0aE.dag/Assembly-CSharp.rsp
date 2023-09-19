@@ -365,6 +365,8 @@
 "Assets/GOAP/GPlanner.cs"
 "Assets/GOAP/GWorld.cs"
 "Assets/GOAP/WorldStates.cs"
+"Assets/GoHome.cs"
+"Assets/GoToCubicle.cs"
 "Assets/GoToHospital.cs"
 "Assets/GoToWaitingRoom.cs"
 "Assets/Nurse.cs"

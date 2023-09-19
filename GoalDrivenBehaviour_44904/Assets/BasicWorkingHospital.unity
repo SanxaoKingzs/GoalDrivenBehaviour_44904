@@ -4452,6 +4452,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2146044785}
+    - targetCorrespondingSourceObject: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2146044787}
   m_SourcePrefab: {fileID: 100100000, guid: 51e437be22296b340954bf6591a60065, type: 3}
 --- !u!1 &2146044782 stripped
 GameObject:
@@ -4503,7 +4506,7 @@ MonoBehaviour:
   - key: Waiting
     value: 0
   afterEffects:
-  - key: treatPatient
+  - key: patientPickeduo
     value: 0
   agent: {fileID: 0}
   running: 0
@@ -4521,6 +4524,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions: []
   currentAction: {fileID: 0}
+--- !u!114 &2146044787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146044782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158939b43b2de6445a18c749c36425e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionName: Action
+  cost: 1
+  target: {fileID: 0}
+  targetTag: 
+  duration: 0
+  preConditions:
+  - key: patientPickedup
+    value: 0
+  afterEffects:
+  - key: treatPatient
+    value: 0
+  agent: {fileID: 0}
+  running: 0
 --- !u!1 &2146182846
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,26 +4662,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 738360369042539229, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      propertyPath: cost
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738360369042539229, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      propertyPath: afterEffects.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738360369042539229, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      propertyPath: preConditions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738360369042539229, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      propertyPath: afterEffects.Array.data[0].key
-      value: isTreated
-      objectReference: {fileID: 0}
-    - target: {fileID: 738360369042539229, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      propertyPath: preConditions.Array.data[0].key
-      value: atHospital
-      objectReference: {fileID: 0}
     - target: {fileID: 7880970886039044016, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.811562
@@ -4697,10 +4705,6 @@ PrefabInstance:
     - target: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_Name
       value: Patient
-      objectReference: {fileID: 0}
-    - target: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
