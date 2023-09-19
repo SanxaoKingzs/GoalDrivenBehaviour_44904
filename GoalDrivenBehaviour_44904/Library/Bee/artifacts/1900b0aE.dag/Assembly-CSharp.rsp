@@ -372,6 +372,7 @@
 "Assets/Nurse.cs"
 "Assets/Patient.cs"
 "Assets/Register.cs"
+"Assets/Rest.cs"
 "Assets/Spawn.cs"
 "Assets/UpdateWorld.cs"
 -langversion:9.0
